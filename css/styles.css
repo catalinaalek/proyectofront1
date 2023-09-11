@@ -57,30 +57,30 @@ header ul li{
 .principal{
     display: flex;
     justify-content: space-between;
-    width: 1290PX;
+    width: 1230PX;
     height: 600px;
 }
 
 .principal div{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 2em;
-    padding: 2em;
+    padding: 0em 4em 0 0;
 }
 
 .principal p{
-    padding: 2em 5em 0 0;
+    padding: 2em 0em 0 7em;
     text-align: justify;
     letter-spacing: 0.05em;
-    line-height: 1.9em;
+    line-height: 2em;
     font-size: 1em;
     font-weight: 600;
     text-align: end;
 }
 
 .principal img{
-    padding: 10px 40px 150px 150px;
+    padding: 10px 40px 150px 160px;
 }
 
 .principal h1{
@@ -132,43 +132,77 @@ header ul li{
 }
 
 .section-3{
-    background-color: aqua;
+    background-color: rgb(249, 249, 249);
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 1,440px;
-    height: 428px;
-    top: 985px;
-    left: -1px;
-    padding: 40px 0px 40px 0px;
+    flex-wrap:wrap;
+    width: 100vw;
+    justify-content: center;
 }
 
-#article-3{
-    display: flex;
-    align-self: flex-end;
-
+.arts-3-section{
+    width: 550px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
-.section-3 h3{
-    color: #323851;
-
+.arts-3-section span{
+    box-sizing: border-box;
+    color: white;
+    background-color: #8B48BF;
+    font-weight: bolder;
+    padding: 15px 28px; 
+    border-radius: 25px;
 }
 
-.section-3 p{
+.arts-3-section strong{
+    color: #232851;
+    margin-left: 28px;
+}
+
+.arts-3-section p{
     color: #B3B2B7;
-    ;
+    margin-left: 110px ;
 }
 
-#h2-jugadores{
-    color: #242E53;
-    text-align: center;
+#sec3-art1{
+    margin-top: 60px;
 }
+
+#sec3-art2{
+    margin-top: 60px;
+}
+
+#sec3-art3{
+    margin-top:30px;
+    margin-bottom: 60px;
+    
+}
+
+
+
+.comentarios{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    padding: 3em 0px 0 0px;
+    margin: 1em 3em 4em 4em;
+}
+
+.comentarios h2{
+    font-size: 2em;
+    color: #232C50;
+    font-weight: 700;
+    
+}
+
 .cards {
     display: flex;
     align-items: center;
     padding: 30px;
     margin: 40px;
     text-align: center;
+    gap: 50px;
 }
 
 .cards article{
@@ -183,14 +217,14 @@ header ul li{
 }
 
 .cards article p{
-    font-size: 18px;
+    color: rgba(185, 185, 193, 1);
+    ;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
 }
 
-.cards button {
-    
-    
-
-}
 
 .section-5{
     background-color: #8B48BF;
@@ -297,7 +331,6 @@ footer p{
     position:absolute;
     right: 165px;
     bottom: 50px;
-    font-family: Be Vietnam;
     letter-spacing: 0em;
 }
 
@@ -309,4 +342,250 @@ footer button{
     color: #FFFFFF;
     cursor:pointer;
 }
+
+@media (max-width: 375px){
+
+    body{
+        background-size: 55vh;
+        background-position: left 120px bottom 102%, left 300px bottom 85%;
+        }
+ /* Mobile Header */
+
+    header {
+        padding: 1.5em;
+        display:flex;
+        justify-content: space-between;
+        gap: 150px;
+}
+    header ul{
+        display: none;
+}
+
+    .btn{
+        display:  none;
+        transition: none;
+}
+
+
+
+/* Mobile Main */
+h1{
+    font-size: 2em;
+    padding: 0;
+
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.principal img{
+    width: 25%;
+    padding: 2px;
+}
+
+.principal div{
+        width: 30%;
+        height: 700px;
+        background-color: #5fee1e;
+        gap: 20px;
+        line-height: 1.7;
+        padding: 0;
+    }
+
+.principal h1{
+    width: 80%;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: -0.035em;
+    text-align: right;
+    text-align: right;
+    padding: 0px;
+    }
+
+
+.principal p{
+font-size: 17px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: right;
+
+}
+
+
+
+
+/* Sección manage*/
+
+
+.section-2{
+    background-color: aqua;
+    flex-direction: column;
+    padding: 30px;
+    gap:10px;
+}
+
+.section-2 h1{
+    
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 600px;
+    padding-right: 60px;
+    text-align: center;
+    gap: 15px;
+}
+.innova h2{
+    font-size: 2em;
+    padding: 15px;
+    font-weight: 700;
+}
+
+.subContainer p{
+    line-height: 1.7;
+    padding: 5px 5px 25px 5px;
+    text-align: center;
+}
+.sub h3{
+    margin-left: -15px;
+    padding: 0.4em 0 0.4em 0.2em;
+    background-color: rgb(255, 239, 234);
+    font-size: 13px; 
+    width: 100%;
+}
+
+.sub p{
+    padding: 0px;
+    font-weight: 200;
+    font-size: 0.7em;
+}
+
+
+/* Comentarios */
+
+
+.comentarios{
+    margin:1em 1.5em 0 1.5em;
+    padding:0;
+} 
+.comentarios h2{
+    font-size: 2em;
+    font-weight: 700;
+
+}
+.cards{
+    padding-bottom: 10px;
+
+}
+.card{
+    gap: 0;
+}
+.card img{
+    max-width: 100px;
+    bottom: 50px;
+}
+
+.cardOculta{
+    display: none;
+}
+
+
+.card p{
+    margin: 1.5em 3em 2.406em 3em;
+    font-size: 0.8em;
+    font-weight: 200 medium;
+}
+.comentarios button{
+    display:block;
+    margin-bottom: 25px;
+    box-shadow: none;
+}
+.comentarios .puntitos{
+    display:flex;
+    gap:5px;
+    padding-bottom: 20px;
+}
+
+.puntitos i{
+    font-size: 10px;
+    color:#F3603B
+}
+
+
+/* Aside */
+
+aside{
+    flex-direction: column;
+    gap: 25px;
+    background-repeat: no-repeat;
+    padding:1.5em 0.5em;
+
+}
+aside p{
+    text-align: center;
+    font-size: 1em;
+    padding: 1em 0.7em;
+}
+
+
+/* Footer Mobile */
+
+footer{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.piePagina{
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+}
+
+.redes{
+    order: 3;
+    flex-direction: column-reverse;
+}
+
+.redes>div{
+    display: flex;
+    gap:30px
+}
+.redes i{
+    font-size: 1.5em;
+    gap:15px;
+}
+.navFooter{
+    width: 100%;
+    padding: 15px;
+    gap: 90px;
+    order: 2;
+    font-size: 0.7em;
+}
+.piePagina form{
+    align-items: center;
+    order: 1;
+}
+
+footer p {
+    position: relative;
+    right:initial;
+    bottom:initial;
+    font-size: 0.5em;
+    padding-top: 5em; 
+
+}
+
+}
+
 
