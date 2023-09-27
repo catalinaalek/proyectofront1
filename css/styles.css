@@ -1,5 +1,4 @@
 
-
 body{
     font-family: Be Vietnam;
     font-size: 15px;
@@ -32,6 +31,11 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 4% 12%;
+}
+
+
+.menu-hamburguesa{
+    display: none;
 }
 
 header ul {
@@ -131,15 +135,20 @@ header ul li{
     text-align: left;
 }
 
+.section-2 #p-oculta{
+    display: none;
+}
+
 .section-3{
     background-color: rgb(249, 249, 249);
     display: flex;
-    flex-wrap:wrap;
-    width: 100vw;
+    flex-wrap:  wrap;
+    width: 100%;
     justify-content: center;
 }
 
 .arts-3-section{
+    
     width: 550px;
     margin-left: 200px;
     margin-right: 200px;
@@ -218,7 +227,6 @@ header ul li{
 
 .cards article p{
     color: rgba(185, 185, 193, 1);
-    ;
     font-size: 14px;
     font-weight: 600;
     line-height: 25px;
@@ -237,7 +245,6 @@ header ul li{
     align-items: center;
 }
 .section-5 h1{
-    font: be vietnam;
     width: 393px;
     height: 96px;
     font-size: 40px;
@@ -346,246 +353,189 @@ footer button{
 @media (max-width: 375px){
 
     body{
+        display: flex;
+        flex-direction: column;
         background-size: 55vh;
         background-position: left 120px bottom 102%, left 300px bottom 85%;
         }
- /* Mobile Header */
 
-    header {
-        padding: 1.5em;
-        display:flex;
-        justify-content: space-between;
-        gap: 150px;
-}
-    header ul{
+    div .menu-hamburguesa{
+        display: block;
+    }
+
+    nav{
         display: none;
-}
+    }
 
     .btn{
-        display:  none;
-        transition: none;
-}
+        display: none;
+    }
+
+    /*Section principal mobile */
+    
+
+    .principal{
+        flex-direction: column;
+        width: 400px;
+        height: 800px;
+        left: 40px;
+        padding-bottom: 30px;
+    }
 
 
-
-/* Mobile Main */
-h1{
-    font-size: 2em;
-    padding: 0;
-
-}
-
-.principal{
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-
-.principal img{
-    width: 25%;
-    padding: 2px;
-}
-
-.principal div{
-        width: 30%;
-        height: 700px;
-        background-color: #5fee1e;
+    .principal img{
+        width: 350px;
+        height: 341px;
+        padding: 0px;
+        gap: 0;
+    }
+    .principal div{
+        width: Fixed (400px);
+        height: Hug (500px);
         gap: 20px;
-        line-height: 1.7;
+    }
+
+    .principal h1{
+        width: 368px;
+        height: 140px;
+        font-size: 45px;
         padding: 0;
+        
     }
 
-.principal h1{
-    width: 80%;
-    font-size: 43px;
-    font-weight: 700;
-    line-height: 57px;
-    letter-spacing: -0.035em;
-    text-align: right;
-    text-align: right;
-    padding: 0px;
+    .principal p{
+        
+        font-size: 15px;
+        padding: 30px 0px 0px 0px;
+        
     }
 
 
-.principal p{
-font-size: 17px;
-font-weight: 500;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: right;
-
-}
-
-
-
-
-/* Sección manage*/
-
-
-.section-2{
-    background-color: aqua;
+    .principal .btn{
+        display: block;
+        padding: 0;
+        gap: 0;
+        
+    }
+    
+    .section-2{
+    background-color:  #3cddf3;
     flex-direction: column;
-    padding: 30px;
-    gap:10px;
-}
+    }
 
 .section-2 h1{
     
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 41px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 600px;
-    padding-right: 60px;
-    text-align: center;
-    gap: 15px;
-}
-.innova h2{
-    font-size: 2em;
-    padding: 15px;
-    font-weight: 700;
-}
+    font-size: 30px;    
+    width: 85%;
+    height: 4%;
+    text-align: left;   
+    }
 
-.subContainer p{
-    line-height: 1.7;
-    padding: 5px 5px 25px 5px;
-    text-align: center;
-}
-.sub h3{
-    margin-left: -15px;
-    padding: 0.4em 0 0.4em 0.2em;
-    background-color: rgb(255, 239, 234);
-    font-size: 13px; 
-    width: 100%;
-}
-
-.sub p{
-    padding: 0px;
-    font-weight: 200;
-    font-size: 0.7em;
-}
-
-
-/* Comentarios */
-
-
-.comentarios{
-    margin:1em 1.5em 0 1.5em;
-    padding:0;
-} 
-.comentarios h2{
-    font-size: 2em;
-    font-weight: 700;
-
-}
-.cards{
-    padding-bottom: 10px;
-
-}
-.card{
-    gap: 0;
-}
-.card img{
-    max-width: 100px;
-    bottom: 50px;
-}
-
-.cardOculta{
+.section-2 p{
     display: none;
+    }
+.section-2 #p-oculta {
+    display: block;
+    width: 85%;
+    font-size: 15px;
+    text-align: left;
+    }
+    .section-3{
+        flex-direction: column;
+        width: 50px;
+    }
+
+    .section-3 .arts-3-section{
+
+        margin: 10%;
+    }
+
+    .arts-3-section text{
+
+        height: 50000px;
+        background: rgba(139, 72, 191, 0.3);
+        padding:15px 60px 15px 0px;
+    }
+
+    .arts-3-section p{
+        margin: 20px 0px;
+        width: 320px;
+        padding: 10px;
+
+    }
+
+    .cards{
+        gap: 0;
+    }
+    .cards p{
+        width: 310px;
+        
+    }
+    
+    .comentarios{
+        width: 350px;
+        padding: 0;
+        margin: 0;
+    }
+    #art1-sec4 {
+        display: none;
+    }
+    
+
+    aside{
+        background-color: #3cddf3;
+        flex-direction: column;
+        gap: 25px;
+        padding:1.5em 0.5em;
+    
+    }
+
+    .section-5 h1{
+        font-size: 35px;
+        line-height: 48px;
+        letter-spacing: -0.005em;
+        text-align: center;
+    }
+
+    .section-5 button{
+        display: block;
+    }
+
+    /*footer*/
+
+    footer{
+        padding: 0;
+    }
+
+    .piePagina{
+        flex-direction: column-reverse;
+        width: 100%px;
+        gap: 20px;
+    }
+
+    div .redes{
+        gap: 70px;
+        width: 400px;
+    }
+
+    .img-icon{
+        width: 100%;
+        
+    }
+
+    .navFooter{
+        gap: 40px;
+        font-size: 0.9em;
+    }
+
+    .piePagina form{
+        align-items: center;
+        padding: 9%;
+        order: 1;
+    }
+    
 }
 
 
-.card p{
-    margin: 1.5em 3em 2.406em 3em;
-    font-size: 0.8em;
-    font-weight: 200 medium;
-}
-.comentarios button{
-    display:block;
-    margin-bottom: 25px;
-    box-shadow: none;
-}
-.comentarios .puntitos{
-    display:flex;
-    gap:5px;
-    padding-bottom: 20px;
-}
-
-.puntitos i{
-    font-size: 10px;
-    color:#F3603B
-}
-
-
-/* Aside */
-
-aside{
-    flex-direction: column;
-    gap: 25px;
-    background-repeat: no-repeat;
-    padding:1.5em 0.5em;
-
-}
-aside p{
-    text-align: center;
-    font-size: 1em;
-    padding: 1em 0.7em;
-}
-
-
-/* Footer Mobile */
-
-footer{
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.piePagina{
-    flex-direction: column;
-    align-items: center;
-    gap:25px;
-}
-
-.redes{
-    order: 3;
-    flex-direction: column-reverse;
-}
-
-.redes>div{
-    display: flex;
-    gap:30px
-}
-.redes i{
-    font-size: 1.5em;
-    gap:15px;
-}
-.navFooter{
-    width: 100%;
-    padding: 15px;
-    gap: 90px;
-    order: 2;
-    font-size: 0.7em;
-}
-.piePagina form{
-    align-items: center;
-    order: 1;
-}
-
-footer p {
-    position: relative;
-    right:initial;
-    bottom:initial;
-    font-size: 0.5em;
-    padding-top: 5em; 
-
-}
-
-}
 
 
